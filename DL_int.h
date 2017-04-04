@@ -101,7 +101,13 @@
  *
  * @param this Referencia a un objeto de tipo Lista
 */
-
+Bool Lista_Search(Lista* this, int val);
+/**
+ * @brief IBusca un elemento en la lista y lo quita
+ *
+ * @param this Referencia a un objeto de tipo Lista
+ * @param val Valor que buscara en la lista para quitarla
+*/
 
 /*--------- Fuinciones de la Lista ------------*/
 

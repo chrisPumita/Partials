@@ -87,8 +87,8 @@
 }
 
 	 Bool Lista_IsEmpty (Lista* this)
-	 {
-		 return this->empty;
+	{
+		return this->empty;
  	}
 
  void order(Lista * this){ // FUNCION NO IMPLEMENTADA
@@ -131,26 +131,24 @@
 	 return FALSE;
  }
 
- /*
 
-LS* LinkedList_Search(LinkedList* this, int val){
- 	LS * it = this -> first;
- 	//Devuelve la direccion del primer nodo
 
- 	while(it != NULL)
- 	{
- 		if (it->info == val)
- 		{
- 			//Encontró el valor buscado
- 			return it;
- 		}
- 		it = it -> next;
- 		//Se pasa al siguiente nodo
- 	}
- 	return NULL; // NO Encontro el elemento, por lo tanto es NULL;
+Bool Lista_Search(Lista* this, int val){
+	for (size_t i = 0; i < this->last; ++i)
+	{
+		if (this->lista[i] == val) { 
+		//Extraer
+
+			//en la posicion i coloco el ultimo valor
+			this->lista[i] = this->lista[this->last];
+			//decremento last
+			--this->last;
+		return TRUE; 
+		} //Hay uno igual
+		 //Recorre el arreglo al sig elemento
+	 }
+	 return FALSE;
  }
-
- */
 
 
 void Lista_Show(Lista * this) // Funcion que imprime la lista en pantalla
@@ -168,6 +166,6 @@ void Lista_Show(Lista * this) // Funcion que imprime la lista en pantalla
 		{
 			printf(" %d, ",this -> lista[i]);
 		}
-				printf("]\n\nValor Front: %d\tValor Last: %d",this->first,this->last);
+				printf("]\n\nValor Front: %d\tValor Last: %d\n",this->first,this->last);
 	}
 }
