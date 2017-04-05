@@ -8,6 +8,7 @@
 /*-----------------------------------------------------------------------------
  *  Definición del ADT: DL_int.h
  *-----------------------------------------------------------------------------*/
+ 
  struct Lista_Type
  {
 	 int* lista;
@@ -95,7 +96,7 @@
 */
 
 
-	void Lista_Show(Lista * this);
+void Lista_Show(Lista * this);
 /**
  * @brief Imprime en pantalla la lista con formato amigable
  *
@@ -110,6 +111,5 @@ Bool Lista_Search(Lista* this, int val);
 */
 
 /*--------- Fuinciones de la Lista ------------*/
-
 
 #endif /* -----ifndef LISTA_INC ------*/

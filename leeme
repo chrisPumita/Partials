@@ -1,0 +1,7 @@
+
+gcc -Wall -std=c99 -o ej1.out Conjunto.c DL_int.c pruebaC.c
+
+./ej1.out
+
+
+No Cuenta: 314206372

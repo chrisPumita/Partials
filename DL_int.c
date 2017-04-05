@@ -120,7 +120,7 @@
 	 this->full = FALSE;
  }
 
-  Bool Lista_FindIf (Lista* this, int val)
+ Bool Lista_FindIf (Lista* this, int val)
  {
 //this->lista[this->first];
 	 for (size_t i = 0; i < this->last; ++i)
@@ -155,17 +155,17 @@ void Lista_Show(Lista * this) // Funcion que imprime la lista en pantalla
 {	
 	if(this->empty == TRUE)
 	{
-		printf("\n\t**Lista vacia**\n");
+		printf("\n\t**VACIO**\n");
 	}
 
 	else
 	{
 
-		printf("\n\n\tLISTA [");
+		printf("{");
 		for (size_t i = this->first; i < this -> last; ++i)
 		{
 			printf(" %d, ",this -> lista[i]);
 		}
-				printf("]\n\nValor Front: %d\tValor Last: %d\n",this->first,this->last);
+		printf("}\n");
 	}
 }
